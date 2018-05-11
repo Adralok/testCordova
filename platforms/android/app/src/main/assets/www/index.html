@@ -59,7 +59,7 @@
 
           function deleteData() {
             db.transaction(function (tx) {
-              tx.executeSql('DELETE * FROM LOGS');
+              tx.executeSql('DROP TABLE LOGS');
             });
             window.location.reload();
           }
